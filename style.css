@@ -1,0 +1,103 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Tipografía personalizada */
+    background: linear-gradient(to right, #f0f0f0, #e0e0e0); /* Fondo gradiente */
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4B0082; /* Morado oscuro */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #4B0082; /* Morado oscuro */
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: relative; /* Para el footer */
+    bottom: 0; /* Para el footer */
+    width: 100%; /* Para el footer */
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos en el eje horizontal */
+}
+
+.box {
+    background-color: rgba(200, 162, 255, 0.7); /* Morado claro y translúcido */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espaciado entre cajas */
+    width: 100%; /* Se asegura que la caja ocupe el 100% de su contenedor */
+    max-width: 400px; /* Ancho máximo de la caja */
+}
+
+h2.center {
+    text-align: center; /* Centra el texto */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+}
+
+button {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en botones */
+    transition: box-shadow 0.3s; /* Transición suave en botones */
+}
+
+button:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Efecto hover en botones */
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+    transition: opacity 0.3s ease; /* Transición en modal */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+    input, textarea {
+        width: 100%;
+    }
+}
+
+li {
+    transition: background-color 0.3s; /* Transición suave en elementos de lista */
+}
+
+li:hover {
+    background-color: #e0e0e0; /* Efecto hover en elementos de lista */
+}

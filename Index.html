@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ProductList App</title>
+</head>
+<body>
+    <header>
+        <h1>ProductList App</h1>
+    </header>
+
+    <main>
+        <div class="box"> <!-- Contenedor con fondo morado claro -->
+            <h2 class="center">Agregar Producto</h2> <!-- Título centrado para agregar producto -->
+            <form id="product-form">
+                <input type="text" id="product-name" placeholder="Nombre del producto" required>
+                <textarea id="product-description" placeholder="Descripción del producto" required></textarea>
+                <button type="submit">Agregar Producto</button>
+            </form>
+        </div>
+
+        <div class="box"> <!-- Contenedor con fondo morado claro -->
+            <h2 class="center">Lista de Productos</h2> <!-- Título centrado para la lista de productos -->
+            <ul id="list"></ul>
+        </div>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Actualizar Producto</h2>
+            <form id="update-form">
+                <input type="hidden" id="update-id">
+                <input type="text" id="update-name" required>
+                <textarea id="update-description" required></textarea>
+                <button type="submit">Actualizar Producto</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="delete-modal" class="modal">
+        <div class="modal-content">
+            <h2>¿Estás seguro?</h2>
+            <button id="confirm-delete">✔</button>
+            <button id="cancel-delete">✖</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>ProductList App © 2024 by Yoel López</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
